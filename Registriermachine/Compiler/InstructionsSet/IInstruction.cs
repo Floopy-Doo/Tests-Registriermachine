@@ -1,4 +1,4 @@
-﻿namespace Registriermachine.Compiler
+﻿namespace Registriermachine.Compiler.InstructionsSet
 {
     using Registriermachine.Register;
 

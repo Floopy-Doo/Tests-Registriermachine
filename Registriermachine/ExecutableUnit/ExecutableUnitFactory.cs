@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using Registriermachine.Compiler;
+    using Registriermachine.Compiler.InstructionsSet;
     using Registriermachine.Register;
 
     public class ExecutableUnitFactory : IExecutableUnitFactory
