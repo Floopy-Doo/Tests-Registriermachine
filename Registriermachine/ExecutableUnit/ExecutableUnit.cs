@@ -1,14 +1,11 @@
 ﻿namespace Registriermachine.ExecutableUnit
 {
     using System.Collections.Generic;
-    using Registriermachine.Compiler;
     using Registriermachine.Compiler.InstructionsSet;
     using Registriermachine.Register;
 
     public class ExecutableUnit : IExecutableUnit
     {
-        private const string ProgramCounterRegister = "PC";
-
         private readonly List<IInstruction> programInstructions;
         private readonly IRegister register;
 
@@ -18,7 +15,7 @@
             this.register = register;
         }
 
-        private int ProgramCounter => this.register[ProgramCounterRegister];
+        private int ProgramCounter => this.register[RegistriermachineConstants.ProgramCounterRegister];
 
         public IRegister Execute()
         {
@@ -33,7 +30,7 @@
 
         private bool HasReachedProgramEnd()
         {
-            return this.register[ProgramCounterRegister] > 0;
+            return this.register[RegistriermachineConstants.ProgramCounterRegister] > 0;
         }
 
         private IInstruction LoadInstruction()

@@ -16,6 +16,8 @@
 
         public void ExecuteOnRegister(IRegister register)
         {
+            register[this.RegisterName] = this.Constant;
+            register[RegistriermachineConstants.ProgramCounterRegister] += 1;
         }
     }
 }
