@@ -6,7 +6,7 @@
     using Registriermachine.Register;
     using Xunit;
 
-    public class AssignConstantInstructionTests
+    public class ConstantInstructionTests
     {
         [Fact]
         public void ShouldCorrectlyExecute()
@@ -19,7 +19,7 @@
 
             Register register = new Register();
             register[RegistriermachineConstants.ProgramCounterRegister] = programCounter;
-            AssignConstantInstruction testee = new AssignConstantInstruction(expectedRegisterName, expectedConstant);
+            ConstantInstruction testee = new ConstantInstruction(expectedRegisterName, expectedConstant);
 
             // Act
             testee.ExecuteOnRegister(register);

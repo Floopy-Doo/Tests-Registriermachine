@@ -4,19 +4,19 @@
     using Registriermachine.Compiler.InstructionsSet;
     using Xunit;
 
-    public class AssignConstantInstructionTemplateTests
+    public class ConstantInstructionTemplateTests
     {
         [Fact]
         public void ShouldCompileInstructionCorrectly()
         {
             // Arrange
-            AssignConstantInstructionTemplate testee = new AssignConstantInstructionTemplate();
+            ConstantInstructionTemplate testee = new ConstantInstructionTemplate();
 
             // Act
             IInstruction instruction = testee.Compile("R10 := 9");
 
             // Assert
-            instruction.Should().BeEquivalentTo(new AssignConstantInstruction("R10", constant: 9), o => o.RespectingRuntimeTypes());
+            instruction.Should().BeEquivalentTo(new ConstantInstruction("R10", constant: 9), o => o.RespectingRuntimeTypes());
         }
 
         [Theory]
@@ -26,7 +26,7 @@
         public void ShouldMatchCode(string code)
         {
             // Arrange
-            AssignConstantInstructionTemplate testee = new AssignConstantInstructionTemplate();
+            ConstantInstructionTemplate testee = new ConstantInstructionTemplate();
 
             // Act
             bool result = testee.MatchesCode(code);
@@ -43,7 +43,7 @@
         public void ShouldNotMatchCode(string code)
         {
             // Arrange
-            AssignConstantInstructionTemplate testee = new AssignConstantInstructionTemplate();
+            ConstantInstructionTemplate testee = new ConstantInstructionTemplate();
 
             // Act
             bool result = testee.MatchesCode(code);

@@ -2,9 +2,9 @@
 {
     using Registriermachine.Register;
 
-    public class AssignConstantInstruction : IInstruction
+    public class ConstantInstruction : IInstruction
     {
-        public AssignConstantInstruction(string registerName, int constant)
+        public ConstantInstruction(string registerName, int constant)
         {
             this.RegisterName = registerName;
             this.Constant = constant;

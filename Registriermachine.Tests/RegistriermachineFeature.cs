@@ -42,7 +42,7 @@
                     instuctionSet =
                         new List<IInstructionTemplate>
                         {
-                            new AssignConstantInstructionTemplate()
+                            new ConstantInstructionTemplate()
                         };
                 });
 
