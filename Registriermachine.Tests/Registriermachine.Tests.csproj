@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Base\Base.csproj" />
+    <ProjectReference Include="..\Registriermachine\Registriermachine.csproj" />
   </ItemGroup>
 
 </Project>
