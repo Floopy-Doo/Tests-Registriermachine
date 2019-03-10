@@ -47,6 +47,7 @@
                             new ArithmeticInstructionTemplate('-', (a, b) => a - b),
                             new ArithmeticInstructionTemplate('*', (a, b) => a * b),
                             new GoToInstructionTemplate(),
+                            new ConditionalGoToInstructionTemplate(),
                         };
                 });
 
