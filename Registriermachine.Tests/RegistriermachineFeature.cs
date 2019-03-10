@@ -42,7 +42,10 @@
                     instuctionSet =
                         new List<IInstructionTemplate>
                         {
-                            new ConstantInstructionTemplate()
+                            new ConstantInstructionTemplate(),
+                            new ArithmeticInstructionTemplate('+', (a, b) => a + b),
+                            new ArithmeticInstructionTemplate('-', (a, b) => a - b),
+                            new ArithmeticInstructionTemplate('*', (a, b) => a * b),
                         };
                 });
 

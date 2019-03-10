@@ -7,7 +7,7 @@
     {
         private readonly Func<int, int, int> function;
 
-        public ArithmeticInstructionTemplate(string operationSymbol, Func<int, int, int> function)
+        public ArithmeticInstructionTemplate(char operationSymbol, Func<int, int, int> function)
             : base(new Regex($@"^(?<registerResult>R\d+) \:\= (?<registerOperand1>R\d+) (?<operation>[{operationSymbol}]) (?<registerOperand2>R\d+)$"))
         {
             this.function = function;
