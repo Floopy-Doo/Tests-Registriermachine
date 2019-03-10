@@ -30,7 +30,7 @@
 
         private bool HasReachedProgramEnd()
         {
-            return this.register[RegistriermachineConstants.ProgramCounterRegister] > 0;
+            return this.register[RegistriermachineConstants.ProgramCounterRegister] != RegistriermachineConstants.EndOfProgram;
         }
 
         private IInstruction LoadInstruction()

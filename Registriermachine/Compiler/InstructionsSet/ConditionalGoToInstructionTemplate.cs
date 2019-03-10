@@ -5,7 +5,7 @@
     public class ConditionalGoToInstructionTemplate : BaseInstructionTemplate, IInstructionTemplate
     {
         public ConditionalGoToInstructionTemplate()
-            : base(new Regex(@"^IF (?<registerCheck>R\d+) \= 0 GOTO (?<line>d+)$"))
+            : base(new Regex(@"^IF (?<registerCheck>R\d+) \= 0 GOTO (?<line>\d+)$"))
         {
         }
 

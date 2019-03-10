@@ -13,7 +13,7 @@
 
         public void ExecuteOnRegister(IRegister register)
         {
-            register[RegistriermachineConstants.ProgramCounterRegister] = this.Line;
+            register[RegistriermachineConstants.ProgramCounterRegister] = this.Line - 1;
         }
     }
 }

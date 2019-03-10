@@ -18,6 +18,7 @@
         {
             if (register[this.RegisterCheck] != 0)
             {
+                register[RegistriermachineConstants.ProgramCounterRegister] += 1;
                 return;
             }
 

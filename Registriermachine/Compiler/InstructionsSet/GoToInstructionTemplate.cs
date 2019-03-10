@@ -5,7 +5,7 @@
     public class GoToInstructionTemplate : BaseInstructionTemplate, IInstructionTemplate
     {
         public GoToInstructionTemplate()
-            : base(new Regex(@"GOTO (?<line>\d+)"))
+            : base(new Regex(@"^GOTO (?<line>\d+)$"))
         {
         }
 
