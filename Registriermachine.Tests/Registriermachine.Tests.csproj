@@ -27,4 +27,8 @@
     <ProjectReference Include="..\Registriermachine\Registriermachine.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ExecutableUnit\" />
+  </ItemGroup>
+
 </Project>
