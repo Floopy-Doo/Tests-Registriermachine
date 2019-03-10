@@ -1,6 +1,7 @@
 ﻿namespace Registriermachine.Tests
 {
     using FluentAssertions;
+    using Registriermachine.Register;
     using Xunit;
 
     public class RegisterTests

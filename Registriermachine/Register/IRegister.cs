@@ -1,4 +1,4 @@
-﻿namespace Registriermachine
+﻿namespace Registriermachine.Register
 {
     public interface IRegister
     {

@@ -2,6 +2,10 @@
 {
     using System.Collections.Generic;
     using FluentAssertions;
+    using Registriermachine.Compiler;
+    using Registriermachine.Compiler.InstructionsSet;
+    using Registriermachine.ExecutableUnit;
+    using Registriermachine.Register;
     using Xbehave;
 
     public class RegistriermachineFeature

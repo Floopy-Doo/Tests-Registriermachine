@@ -1,6 +1,8 @@
-﻿namespace Registriermachine
+﻿namespace Registriermachine.Compiler
 {
     using System.Collections.Generic;
+    using Registriermachine.Compiler.InstructionsSet;
+    using Registriermachine.ExecutableUnit;
 
     public class Compliler : ICompiler
     {

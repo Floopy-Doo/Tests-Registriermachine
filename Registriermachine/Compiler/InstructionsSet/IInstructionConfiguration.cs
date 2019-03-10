@@ -1,4 +1,4 @@
-﻿namespace Registriermachine
+﻿namespace Registriermachine.Compiler.InstructionsSet
 {
     public interface IInstructionConfiguration
     {
