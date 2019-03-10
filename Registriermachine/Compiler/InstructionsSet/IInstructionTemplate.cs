@@ -1,6 +1,6 @@
 ﻿namespace Registriermachine.Compiler.InstructionsSet
 {
-    public interface IInstructionConfiguration
+    public interface IInstructionTemplate
     {
         IInstruction Compile(string code);
 

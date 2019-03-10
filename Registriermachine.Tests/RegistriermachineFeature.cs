@@ -14,7 +14,7 @@
         public void ShouldExecuteProgramCorrectly()
         {
             List<string> codeLines = null;
-            List<IInstructionConfiguration> instuctionSet = null;
+            List<IInstructionTemplate> instuctionSet = null;
 
             IRegister register = null;
 
@@ -40,14 +40,17 @@
                 () =>
                 {
                     instuctionSet =
-                        new List<IInstructionConfiguration>();
+                        new List<IInstructionTemplate>
+                        {
+                            new AssignConstantInstructionTemplate()
+                        };
                 });
 
             "When I compile and execute those line of code".x(
                 () =>
                 {
                     IExecutableUnitFactory executableUnitFactory = new ExecutableUnitFactory();
-                    ICompiler compiler = new Compliler(instuctionSet, executableUnitFactory);
+                    ICompiler compiler = new Registriermachine.Compiler.Compiler(instuctionSet, executableUnitFactory);
                     IExecutableUnit executableUnit = compiler.Compile(codeLines);
                     register = executableUnit.Execute();
                 });
